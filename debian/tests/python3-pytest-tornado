@@ -1,0 +1,2 @@
+#!/bin/sh -e
+py3versions -s | tr ' ' '\n' | xargs -I {} env {} -Wd -m pytest -v -x 2>&1

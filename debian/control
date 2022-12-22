@@ -1,0 +1,27 @@
+Source: pytest-tornado
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Pierre-Elliott Bécue <peb@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               pandoc,
+               python3-all,
+               python3-pytest,
+               python3-setuptools,
+               python3-tornado
+Standards-Version: 4.5.0
+Homepage: https://github.com/eugeniy/pytest-tornado
+Vcs-Git: https://salsa.debian.org/python-team/modules/pytest-tornado.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/pytest-tornado
+Rules-Requires-Root: no
+
+Package: python3-pytest-tornado
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: py.test plugin to test Tornado applications (Python 3)
+ pytest-tornado is a plugin for the Pytest testing framework which
+ provides fixtures and markers to simplify testing of Tornado applications
+ (Python web framework and ansynchronous networking library).
+ .
+ This package contains the plugin for Python 3 code.

@@ -1,0 +1,113 @@
+pytest-tornado (0.8.1-1) unstable; urgency=medium
+
+  [ Pierre-Elliott Bécue ]
+  * New upstream release 0.8.1
+  * d/control:
+    - Bump Standards-Version to 4.5.0
+    - Bump debhelper-compat to 13
+    - Set Rules-Requires-Root to no
+  * Fix d/tests/python3-pytest-tornado use of py3versions
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Tue, 26 May 2020 12:30:56 +0200
+
+pytest-tornado (0.8.0-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Andrey Rahmatullin ]
+  * Drop Python 2 support (Closes: #937567).
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Tue, 03 Sep 2019 15:25:51 +0500
+
+pytest-tornado (0.8.0-2) unstable; urgency=medium
+
+  * Source-only release
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Tue, 16 Jul 2019 22:39:32 +0200
+
+pytest-tornado (0.8.0-1) unstable; urgency=medium
+
+  * New upstream release 0.8.0
+    - No longer need d/patches
+  * d/control:
+    - Uploaders: replace my Crans' address by my Debian's one.
+    - Bump Standards-Version to 4.4.0. No change required
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Sun, 14 Jul 2019 16:38:32 +0200
+
+pytest-tornado (0.5.0-1) unstable; urgency=medium
+
+  * New upstream release 0.5.0
+  * Drop old d/p/0001.
+  * Add d/p/0001 to replace a deprecated generator-based test by a
+    parametrized one.
+  * d/control:
+    - Bump Standards-Version to 4.1.4. No change required.
+
+ -- Pierre-Elliott Bécue <becue@crans.org>  Thu, 26 Apr 2018 11:57:14 +0200
+
+pytest-tornado (0.4.5-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Remove Testsuite field, not needed anymore
+
+  [ Pierre-Elliott Bécue ]
+  * d/control:
+    + Adopted the package.  Closes: #868847
+    + wrap-and-sort-ed
+    + Bump debhelper version dependency to 11~
+    + Bump Standards-Version to 4.1.3
+    + Drop X-Python(|3)-Version tags as they're unneeded
+  * d/compat: bump compat level to 11
+  * d/watch: use uscan special tags and bump bersion to 4
+  * d/patches/: add patch 0001 to take into account the evolutions in tornado
+    5.0.  Closes: #893293
+  * d/copyright:
+    + Add myself to debian/*
+
+ -- Pierre-Elliott Bécue <becue@crans.org>  Mon, 26 Mar 2018 10:12:33 +0200
+
+pytest-tornado (0.4.5-2) unstable; urgency=medium
+
+  * Orphan package:
+    + put Debian QA in Maintainer field, drop Uploaders.
+
+  * drop git-dpm regime (remove deb/.git-dpm).
+  * deb/gbp.conf:
+    + add sign-tags.
+    + change debian-branch to meet DEP-14.
+  * deb/copyright:
+    + expand copyright span.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+ -- Daniel Stender <stender@debian.org>  Mon, 19 Feb 2018 17:20:37 +0100
+
+pytest-tornado (0.4.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Updated maintainer email address.
+  * deb/control:
+    + put group in Maintainer field (unconfirmed group uploads).
+    + bumped Standards-Version to 3.9.7 (no changes needed).
+    + use HTTPS also for Vcs-Git.
+  * deb/copyright: updated (and corrected) copyright spans.
+  * deb/rules: dropped net blocking (Pybuild takes care of that).
+  * Added deb/source/options (ignore egg-info).
+
+ -- Daniel Stender <stender@debian.org>  Sun, 06 Mar 2016 23:03:07 +0100
+
+pytest-tornado (0.4.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #792919)
+
+ -- Daniel Stender <debian@danielstender.com>  Mon, 20 Jul 2015 09:21:41 +0200
